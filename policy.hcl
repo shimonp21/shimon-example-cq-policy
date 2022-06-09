@@ -12,4 +12,10 @@ policy "shimon custom policy" {
 						query = "SELECT 'aaa' AS bbb"
 						expect_output = false
 		}
+
+		check "othercheck" {
+           title = "othercheck"
+		   query = "SELECT '111111' AS column"
+		   expect_output = false
+		}
 }
